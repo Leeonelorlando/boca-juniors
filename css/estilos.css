@@ -225,6 +225,12 @@ h4 {
     grid-column-start: span 1;
 }
 
+.header-bombonera {
+    width: 5%;
+    display: block;
+    margin: auto;
+}
+
 
 /* Celular Bombonera */
 

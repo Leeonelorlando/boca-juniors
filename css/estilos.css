@@ -228,18 +228,59 @@ h4 {
 
 /* Celular Bombonera */
 
-@media (max-width:768px) {
+@media screen and (min-width: 769px) {}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
     .bombonera-container {
-        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .bombonera__item:nth-child(2) {
+        grid-column-start: span 3;
     }
     .bombonera__item:nth-child(4) {
-        grid-column-start: span 2;
+        grid-column-start: span 3;
     }
     .bombonera__item:nth-child(5) {
-        grid-column-start: span 2;
+        grid-row-start: span 2;
     }
     .bombonera__item:nth-child(9) {
-        grid-column-start: span 4;
+        grid-column-start: span 1;
+    }
+    .bombonera__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: height 2s;
+    }
+    .header-bombonera {
+        width: 20%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .bombonera-container {
+        display: block;
+    }
+    .bombonera__item:nth-child(1) {
+        width: 110%;
+    }
+    .bombonera__item:nth-child(4) {
+        width: 110%;
+    }
+    .bombonera__item:nth-child(5) {
+        width: 110%;
+    }
+    .bombonera__item:nth-child(9) {
+        width: 110%;
+    }
+    .header-bombonera {
+        width: 20%;
+        display: block;
+        margin: auto;
     }
 }
 

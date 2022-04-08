@@ -58,6 +58,10 @@ h2 {
     line-height: 20px;
 }
 
+h6 {
+    color: #fdfcaa;
+}
+
 .showcase {
     width: 100%;
     height: 550px;
@@ -184,10 +188,64 @@ h4 {
     position: absolute;
     color: white;
     background: linear-gradient(rgb(253, 253, 255), #4b4c4e);
-    width: 20%;
-    margin: 0;
+    width: 22%;
+    margin: 0px;
     padding: 10px;
     text-align: center;
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .bombonera-container {
+        justify-content: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .bombonera__item:nth-child(2) {
+        grid-column-start: span 3;
+    }
+    .bombonera__item:nth-child(4) {
+        grid-column-start: span 3;
+    }
+    .bombonera__item:nth-child(5) {
+        grid-row-start: span 2;
+    }
+    .bombonera__item:nth-child(9) {
+        grid-column-start: span 1;
+    }
+    .bombonera__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: height 2s;
+    }
+    .header-bombonera {
+        width: 20%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .bombonera-container {
+        display: block;
+    }
+    .bombonera__item:nth-child(1) {
+        width: 110%;
+    }
+    .bombonera__item:nth-child(4) {
+        width: 110%;
+    }
+    .bombonera__item:nth-child(5) {
+        width: 110%;
+    }
+    .bombonera__item:nth-child(9) {
+        width: 110%;
+    }
+    .header-bombonera {
+        width: 20%;
+        display: block;
+        margin: auto;
+    }
 }
 
 
@@ -314,7 +372,8 @@ h4 {
     background: #24303c;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-top: 50px;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
@@ -379,7 +438,8 @@ h4 {
     height: 340px;
     background: #4e4d4d;
     margin: auto;
-    margin-top: 180px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     box-shadow: 7px 13px 37px #000;
     padding: 20px 30px;
     border-top: 4px solid #017bab;
@@ -413,6 +473,11 @@ h4 {
     border: none;
     color: white;
     margin-bottom: 16px;
+    cursor: pointer;
+}
+
+title {
+    background: #fff;
 }
 
 .form-login a {
@@ -484,6 +549,12 @@ tr {
     background-color: #0d0f68;
 }
 
+.margin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'calibri';
+}
+
 
 /* Impares */
 
@@ -509,4 +580,50 @@ table tr:nth-child(even):hover {
 }
 
 
-/* Celular */
+/* Pagina de Historia */
+
+.contenido {
+    font-family: 'calibri';
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 100px;
+}
+
+.img_right {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(250, 248, 162);
+    float: right;
+    width: 350px;
+    transition: all .4s ease-in-out;
+    flex-wrap: wrap;
+}
+
+.img_left {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(250, 248, 162);
+    float: left;
+    width: 250px;
+    transition: all .4s ease-in-out;
+}
+
+.img_right:hover {
+    transform: scale(1.2);
+    align-items: center;
+}
+
+.img_left:hover {
+    transform: scale(1.2);
+    align-items: center;
+}
+
+.parrafo_historia {
+    text-align: left;
+}
+
+.titulo_historia {
+    text-align: left;
+    background: linear-gradient(to right, #fafcab, rgb(141, 141, 116));
+    color: #0F3E76;
+}

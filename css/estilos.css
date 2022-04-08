@@ -153,6 +153,81 @@ h4 {
 }
 
 
+/* CELULAR INICIO */
+
+@media screen and (min-device-width: 600px) and (max-device-width: 600px) {
+    .showcase {
+        width: 100%;
+        height: 180px;
+        background: url("https://bocajuniors.com.ar/upload/images/thumbs/ri/ve/1920x794river-1_681e7.jpg") no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(2, 180px);
+        padding: 50px 50px 50px 50px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .cards-banner-one {
+        width: 100%;
+        height: 130px;
+        background: url("https://bocashop.vteximg.com.br/arquivos/ids/155632/Banner-Nosotros-Xeneizes.png?v=637320578294470000");
+        max-width: 100%;
+        background-size: contain;
+    }
+    .news-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin: 30px 10 10px 10px;
+        padding: 5px;
+    }
+    .news-cards img {
+        width: 100%;
+        height: 120px;
+    }
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 400px) {
+    .showcase {
+        width: 100%;
+        height: 180px;
+        background: url("https://bocajuniors.com.ar/upload/images/thumbs/ri/ve/1920x794river-1_681e7.jpg") no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(2, 180px);
+        padding: 50px 50px 50px 50px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .cards-banner-one {
+        width: 110%;
+        height: 180px;
+        background: url("https://bocashop.vteximg.com.br/arquivos/ids/155632/Banner-Nosotros-Xeneizes.png?v=637320578294470000");
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+    .news-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 5px 5px 5px 5px;
+        margin-right: -25px;
+    }
+    .news-cards img {
+        width: 100%;
+        height: 120px;
+    }
+}
+
+
 /* Follow */
 
 .links {
@@ -194,57 +269,62 @@ h4 {
     text-align: center;
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
-    .bombonera-container {
+
+/* CELULAR PLANTEL */
+
+@media screen and (min-device-width: 600px) and (max-device-width: 600px) {
+    .plantel-container {
+        display: grid;
+        grid-template-columns: repeat(2, 280px);
+        padding: 50px 550px 550px 550px;
         justify-content: center;
-        display: block;
-        margin: 0 auto;
+        padding: 50px 50px 50px 50px;
     }
-    .bombonera__item:nth-child(2) {
-        grid-column-start: span 3;
-    }
-    .bombonera__item:nth-child(4) {
-        grid-column-start: span 3;
-    }
-    .bombonera__item:nth-child(5) {
-        grid-row-start: span 2;
-    }
-    .bombonera__item:nth-child(9) {
-        grid-column-start: span 1;
-    }
-    .bombonera__img {
+    .plantel__img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         transition: height 2s;
     }
-    .header-bombonera {
-        width: 20%;
-        display: block;
-        margin: auto;
+    .plantel__img:hover {
+        height: 115%;
+    }
+    .plantel__title {
+        position: absolute;
+        color: white;
+        background: linear-gradient(rgb(253, 253, 255), #4b4c4e);
+        width: 43%;
+        margin: 0px;
+        padding: 10px;
+        text-align: center;
     }
 }
 
-@media only screen and (max-device-width: 480px) {
-    .bombonera-container {
-        display: block;
+@media screen and (min-device-width: 400px) and (max-device-width: 400px) {
+    .plantel-container {
+        display: grid;
+        grid-template-columns: repeat(2, 180px);
+        padding: 50px 550px 550px 550px;
+        justify-content: center;
+        padding: 50px 50px 50px 50px;
     }
-    .bombonera__item:nth-child(1) {
-        width: 110%;
+    .plantel__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: height 2s;
     }
-    .bombonera__item:nth-child(4) {
-        width: 110%;
+    .plantel__img:hover {
+        height: 115%;
     }
-    .bombonera__item:nth-child(5) {
-        width: 110%;
-    }
-    .bombonera__item:nth-child(9) {
-        width: 110%;
-    }
-    .header-bombonera {
-        width: 20%;
-        display: block;
-        margin: auto;
+    .plantel__title {
+        position: absolute;
+        color: white;
+        background: linear-gradient(rgb(253, 253, 255), #4b4c4e);
+        width: 40%;
+        margin: 0px;
+        padding: 10px;
+        text-align: center;
     }
 }
 
@@ -283,7 +363,7 @@ h4 {
     grid-column-start: span 1;
 }
 
-.header-bombonera {
+.header-logo {
     width: 5%;
     display: block;
     margin: auto;

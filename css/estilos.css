@@ -148,15 +148,12 @@ nav li:hover {
 
 .news-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
     margin: 30px 0;
 }
 
 .news-cards img {
     width: 100%;
     height: 180px;
-    transition: height 2s;
 }
 
 .news-cards h3 {
@@ -170,10 +167,6 @@ nav li:hover {
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
-}
-
-.news-cards img:hover {
-    height: 75%;
 }
 
 
@@ -288,7 +281,7 @@ nav li:hover {
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-auto-rows: 300px;
-    padding: 50px;
+    padding: 0px 50px 50px 50px;
     grid-gap: 50px 10px;
     justify-content: center;
 }
@@ -308,7 +301,7 @@ nav li:hover {
     position: absolute;
     color: white;
     background: linear-gradient(rgb(253, 253, 255), #4b4c4e);
-    width: 22%;
+    width: 21%;
     margin: 0px;
     padding: 10px;
     text-align: center;
@@ -332,13 +325,13 @@ nav li:hover {
         transition: height 2s;
     }
     .plantel__img:hover {
-        height: 115%;
+        height: 105%;
     }
     .plantel__title {
         position: absolute;
         color: white;
         background: linear-gradient(rgb(253, 253, 255), #4b4c4e);
-        width: 43%;
+        width: 46.50%;
         margin: 0px;
         padding: 10px;
         text-align: center;
@@ -360,13 +353,13 @@ nav li:hover {
         transition: height 2s;
     }
     .plantel__img:hover {
-        height: 115%;
+        height: 105%;
     }
     .plantel__title {
         position: absolute;
         color: white;
         background: linear-gradient(rgb(253, 253, 255), #4b4c4e);
-        width: 40%;
+        width: 45%;
         margin: 0px;
         padding: 10px;
         text-align: center;
@@ -380,9 +373,9 @@ nav li:hover {
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-auto-rows: 300px;
-    padding: 50px;
     grid-gap: 20px 10px;
     justify-content: center;
+    padding: 0px 50px 50px 50px;
 }
 
 .bombonera__img {
@@ -393,7 +386,7 @@ nav li:hover {
 }
 
 .bombonera__img:hover {
-    height: 115%;
+    height: 105%;
 }
 
 .bombonera__item:nth-child(4) {
@@ -406,12 +399,6 @@ nav li:hover {
 
 .bombonera__item:nth-child(9) {
     grid-column-start: span 1;
-}
-
-.header-logo {
-    width: 5%;
-    display: block;
-    margin: auto;
 }
 
 
@@ -485,12 +472,6 @@ nav li:hover {
 
 
 /* Pagina de Socios */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .form-register {
     width: 400px;
@@ -625,7 +606,6 @@ title {
 }
 
 .buttons {
-    min-width: 420px;
     display: flex;
     justify-content: space-around;
 }
@@ -658,7 +638,7 @@ p {
 }
 
 table {
-    width: 720px;
+    width: 500px;
     margin: 0 auto;
     color: white;
     text-align: center;
@@ -719,7 +699,7 @@ table tr:nth-child(even):hover {
     margin: 10px;
     border: 2px solid rgb(250, 248, 162);
     float: right;
-    width: 350px;
+    width: 250px;
     transition: all .4s ease-in-out;
     flex-wrap: wrap;
 }
@@ -751,4 +731,13 @@ table tr:nth-child(even):hover {
     text-align: left;
     background: linear-gradient(to right, #fafcab, rgb(141, 141, 116));
     color: #0F3E76;
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 400px) {
+    .contenido {
+        font-family: 'calibri';
+        padding: 0px;
+        margin: 45px;
+        margin-bottom: 100px;
+    }
 }

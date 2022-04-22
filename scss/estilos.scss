@@ -1,0 +1,15 @@
+@import 'variables';
+.h1_prueba {
+    text-align: $centro;
+    background-color: $bgcolor;
+    color: $white;
+    padding: 20px;
+}
+
+.nav_ul {
+    font-family: $font_principal;
+    background-color: $bgcolor;
+    width: $maxWidht;
+    list-style-type: $no;
+    text-align: $centro;
+}

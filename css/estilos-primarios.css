@@ -1,0 +1,743 @@
+/*.h1_prueba {
+    text-align: center;
+    background-color: rgb(9, 37, 78);
+    color: rgb(255, 255, 254);
+    padding: 20px;
+}
+
+.nav_ul {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(9, 37, 78);
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}*/
+
+.nav_li {
+    display: inline-flex;
+}
+
+.nav_a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+.header_prueba {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(9, 37, 78);
+    margin: 1px;
+}
+
+.body_prueba {
+    height: 100px;
+    background-color: rgb(9, 37, 78);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background: position 100px;
+    background-attachment: fixed;
+}
+
+.h2_prueba {
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+}
+
+.h6_prueba {
+    color: #fdfcaa;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(9, 37, 78);
+    color: rgb(255, 255, 254);
+    padding: 20px;
+}
+
+nav ul {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(9, 37, 78);
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(9, 37, 78);
+    margin: 1px;
+}
+
+body {
+    height: 100px;
+    background-color: rgb(9, 37, 78);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background: position 100px;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+}
+
+h6 {
+    color: #fdfcaa;
+}
+
+.centrado {
+    display: block;
+    margin: auto;
+}
+
+nav li:hover {
+    background-color: rgb(224, 206, 103);
+}
+
+.showcase {
+    width: 100%;
+    height: 550px;
+    background: url("https://bocajuniors.com.ar/upload/images/thumbs/ri/ve/1920x794river-1_681e7.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.showcase h2 {
+    margin-bottom: 10px;
+}
+
+.parrafo_prueba {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(9, 37, 78);
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+.h3_prueba {
+    text-align: center;
+    background-color: rgb(250, 248, 162);
+    color: #0F3E76;
+}
+
+.h4_prueba {
+    color: #fafafa;
+}
+
+
+/* News Cards */
+
+.news-cards {
+    display: grid;
+    margin: 30px 0;
+}
+
+.news-cards img {
+    width: 100%;
+    height: 180px;
+}
+
+.news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.news-cards a {
+    padding: 10px 0;
+    color: #030303;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+/* CARDS BANNER ONE */
+
+.cards-banner-one {
+    width: 100%;
+    height: 350px;
+    background: url("https://bocashop.vteximg.com.br/arquivos/ids/155632/Banner-Nosotros-Xeneizes.png?v=637320578294470000");
+    margin-bottom: 40px;
+    transition: height 2s;
+}
+
+.cards-banner-one .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #fff;
+}
+
+.cards-banner-one:hover {
+    height: 400%;
+}
+
+
+/* CELULAR INICIO */
+
+@media screen and (min-device-width: 600px) and (max-device-width: 600px) {
+    .showcase {
+        width: 100%;
+        height: 180px;
+        background: url("https://bocajuniors.com.ar/upload/images/thumbs/ri/ve/1920x794river-1_681e7.jpg") no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(2, 180px);
+        padding: 50px 50px 50px 50px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .cards-banner-one {
+        width: 100%;
+        height: 130px;
+        background: url("https://bocashop.vteximg.com.br/arquivos/ids/155632/Banner-Nosotros-Xeneizes.png?v=637320578294470000");
+        max-width: 100%;
+        background-size: contain;
+    }
+    .news-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin: 30px 10 10px 10px;
+        padding: 5px;
+    }
+    .news-cards img {
+        width: 100%;
+        height: 120px;
+    }
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 400px) {
+    .showcase {
+        width: 100%;
+        height: 180px;
+        background: url("https://bocajuniors.com.ar/upload/images/thumbs/ri/ve/1920x794river-1_681e7.jpg") no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(2, 180px);
+        padding: 50px 50px 50px 50px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .cards-banner-one {
+        width: 110%;
+        height: 180px;
+        background: url("https://bocashop.vteximg.com.br/arquivos/ids/155632/Banner-Nosotros-Xeneizes.png?v=637320578294470000");
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+    .news-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 5px 5px 5px 5px;
+        margin-right: -25px;
+    }
+    .news-cards img {
+        width: 100%;
+        height: 120px;
+    }
+}
+
+
+/* Follow */
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Plantel */
+
+.plantel-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-auto-rows: 300px;
+    padding: 0px 50px 50px 50px;
+    grid-gap: 50px 10px;
+    justify-content: center;
+}
+
+.plantel__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: height 2s;
+}
+
+.plantel__img:hover {
+    height: 115%;
+}
+
+.plantel__title {
+    position: absolute;
+    color: white;
+    background: linear-gradient(rgb(253, 253, 255), #4b4c4e);
+    width: 21%;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* CELULAR PLANTEL */
+
+@media screen and (min-device-width: 600px) and (max-device-width: 600px) {
+    .plantel-container {
+        display: grid;
+        grid-template-columns: repeat(2, 280px);
+        padding: 50px 550px 550px 550px;
+        justify-content: center;
+        padding: 50px 50px 50px 50px;
+    }
+    .plantel__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: height 2s;
+    }
+    .plantel__img:hover {
+        height: 105%;
+    }
+    .plantel__title {
+        position: absolute;
+        color: white;
+        background: linear-gradient(rgb(253, 253, 255), #4b4c4e);
+        width: 46.50%;
+        margin: 0px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 400px) {
+    .plantel-container {
+        display: grid;
+        grid-template-columns: repeat(2, 180px);
+        padding: 50px 550px 550px 550px;
+        justify-content: center;
+        padding: 50px 50px 50px 50px;
+    }
+    .plantel__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: height 2s;
+    }
+    .plantel__img:hover {
+        height: 105%;
+    }
+    .plantel__title {
+        position: absolute;
+        color: white;
+        background: linear-gradient(rgb(253, 253, 255), #4b4c4e);
+        width: 45%;
+        margin: 0px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+
+/* La Bombonera */
+
+.bombonera-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-auto-rows: 300px;
+    grid-gap: 20px 10px;
+    justify-content: center;
+    padding: 0px 50px 50px 50px;
+}
+
+.bombonera__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: height 2s;
+}
+
+.bombonera__img:hover {
+    height: 105%;
+}
+
+.bombonera__item:nth-child(4) {
+    grid-column-start: span 3;
+}
+
+.bombonera__item:nth-child(5) {
+    grid-row-start: span 2;
+}
+
+.bombonera__item:nth-child(9) {
+    grid-column-start: span 1;
+}
+
+
+/* Celular Bombonera */
+
+@media screen and (min-width: 769px) {}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .bombonera-container {
+        justify-content: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .bombonera__item:nth-child(2) {
+        grid-column-start: span 3;
+    }
+    .bombonera__item:nth-child(4) {
+        grid-column-start: span 3;
+    }
+    .bombonera__item:nth-child(5) {
+        grid-row-start: span 2;
+    }
+    .bombonera__item:nth-child(9) {
+        grid-column-start: span 1;
+    }
+    .bombonera__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: height 2s;
+    }
+    .header-bombonera {
+        width: 20%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .bombonera-container {
+        display: block;
+    }
+    .bombonera__item:nth-child(1) {
+        width: 110%;
+    }
+    .bombonera__item:nth-child(4) {
+        width: 110%;
+    }
+    .bombonera__item:nth-child(5) {
+        width: 110%;
+    }
+    .bombonera__item:nth-child(9) {
+        width: 110%;
+    }
+    .header-bombonera {
+        width: 20%;
+        display: block;
+        margin: auto;
+    }
+}
+
+.bombonera__title {
+    position: absolute;
+    color: white;
+    background: linear-gradient(rgb(253, 253, 255), #4b4c4e);
+    width: 20%;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Pagina de Socios */
+
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+/* Pagina de Login */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-login {
+    width: 400px;
+    height: 340px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+}
+
+.form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid;
+    font-size: 20px;
+    font-family: 'calibri';
+}
+
+.controls {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #252323;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.buttons {
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+title {
+    background: #fff;
+}
+
+.form-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}
+
+
+/* Botones Redes Sociales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
+
+/* Pagina de Posiciones */
+
+h1,
+p {
+    text-align: center;
+    color: #fafafa;
+}
+
+table {
+    width: 500px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+tr {
+    cursor: pointer;
+}
+
+.destacado {
+    font-family: 'calibri';
+    font-weight: bold;
+    background-color: #0d0f68;
+}
+
+.margin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'calibri';
+}
+
+
+/* Impares */
+
+table tr:nth-child(odd) {
+    background-color: #0F3E76;
+}
+
+table tr:nth-child(odd):hover {
+    color: rgb(212, 218, 141);
+    background-color: #0F3E76;
+}
+
+
+/* Pares */
+
+table tr:nth-child(even) {
+    background-color: #0F3E76;
+}
+
+table tr:nth-child(even):hover {
+    color: rgb(212, 218, 141);
+    background-color: #0F3E76;
+}
+
+
+/* Pagina de Historia */
+
+.contenido {
+    font-family: 'calibri';
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 100px;
+}
+
+.img_right {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(250, 248, 162);
+    float: right;
+    width: 250px;
+    transition: all .4s ease-in-out;
+    flex-wrap: wrap;
+}
+
+.img_left {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(250, 248, 162);
+    float: left;
+    width: 250px;
+    transition: all .4s ease-in-out;
+}
+
+.img_right:hover {
+    transform: scale(1.2);
+    align-items: center;
+}
+
+.img_left:hover {
+    transform: scale(1.2);
+    align-items: center;
+}
+
+.parrafo_historia {
+    text-align: left;
+}
+
+.titulo_historia {
+    text-align: left;
+    background: linear-gradient(to right, #fafcab, rgb(141, 141, 116));
+    color: #0F3E76;
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 400px) {
+    .contenido {
+        font-family: 'calibri';
+        padding: 0px;
+        margin: 45px;
+        margin-bottom: 100px;
+    }
+}

@@ -153,13 +153,12 @@ nav li:hover {
 /* News Cards */
 
 .news-cards {
-    display: grid;
-    margin: 30px 0;
+    display: inline-block;
 }
 
 .news-cards img {
     width: 100%;
-    height: 180px;
+    height: 120px;
 }
 
 .news-cards h3 {
@@ -171,7 +170,6 @@ nav li:hover {
     padding: 10px 0;
     color: #030303;
     text-transform: uppercase;
-    display: inline-block;
     font-weight: bold;
 }
 
@@ -202,32 +200,27 @@ nav li:hover {
 @media screen and (min-device-width: 600px) and (max-device-width: 600px) {
     .showcase {
         width: 100%;
-        height: 180px;
+        height: 200px;
         background: url("https://bocajuniors.com.ar/upload/images/thumbs/ri/ve/1920x794river-1_681e7.jpg") no-repeat center center/cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        color: #fff;
-        display: grid;
-        grid-template-columns: repeat(2, 180px);
-        padding: 50px 50px 50px 50px;
-        justify-content: center;
+        padding: 100px 50px 0px 50px;
+        justify-content: right;
         margin-top: 10px;
+        font-size: small;
     }
     .cards-banner-one {
         width: 100%;
-        height: 130px;
+        height: 120px;
         background: url("https://bocashop.vteximg.com.br/arquivos/ids/155632/Banner-Nosotros-Xeneizes.png?v=637320578294470000");
         max-width: 100%;
         background-size: contain;
+        font-size: small;
     }
     .news-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        gap: 10px;
         margin: 30px 10 10px 10px;
         padding: 5px;
+        font-size: small;
+        display: grid;
     }
     .news-cards img {
         width: 100%;
@@ -238,18 +231,12 @@ nav li:hover {
 @media screen and (min-device-width: 400px) and (max-device-width: 400px) {
     .showcase {
         width: 100%;
-        height: 180px;
+        height: 200px;
         background: url("https://bocajuniors.com.ar/upload/images/thumbs/ri/ve/1920x794river-1_681e7.jpg") no-repeat center center/cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        color: #fff;
-        display: grid;
-        grid-template-columns: repeat(2, 180px);
-        padding: 50px 50px 50px 50px;
-        justify-content: center;
+        grid-template-columns: repeat(2, 200px);
+        padding: 100px 50px 0px 50px;
         margin-top: 10px;
+        font-size: small;
     }
     .cards-banner-one {
         width: 110%;
@@ -257,6 +244,7 @@ nav li:hover {
         background: url("https://bocashop.vteximg.com.br/arquivos/ids/155632/Banner-Nosotros-Xeneizes.png?v=637320578294470000");
         background-size: cover;
         margin-bottom: 50px;
+        font-size: small;
     }
     .news-cards {
         display: grid;
@@ -264,6 +252,7 @@ nav li:hover {
         gap: 25px;
         padding: 5px 5px 5px 5px;
         margin-right: -25px;
+        font-size: small;
     }
     .news-cards img {
         width: 100%;

@@ -13,3 +13,36 @@
     list-style-type: $no;
     text-align: $centro;
 }
+
+// Mixin
+@mixin large-text {
+    font: {
+        family: $font_principal;
+        size: 30px;
+        weight: bold;
+    }
+}
+
+.page-title {
+    @include large-text;
+    padding: 4px;
+    margin-top: 10px;
+}
+
+@mixin colors($text, $background, $border) {
+    color: $text;
+    background-color: $background;
+    border-color: $border;
+}
+
+$values: #ffffff,
+#131212,
+#080808;
+.primary {
+    @include colors($values...);
+}
+
+$value-map: (text: #f7f8f7, background: #111111, border: #ffffff);
+.secondary {
+    @include colors($value-map...);
+}
